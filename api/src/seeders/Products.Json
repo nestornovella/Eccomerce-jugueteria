@@ -1,0 +1,506 @@
+[
+  {
+    "name": "Peluche Osito",
+    "value": 12.99,
+    "active": true,
+    "stock": 50,
+    "width": 20.0,
+    "height": 25.0,
+    "description": "Un adorable peluche de osito.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Peluches", "Animales", "Infantil"]
+  },
+  {
+    "name": "Muñeca de Moda",
+    "value": 19.99,
+    "active": true,
+    "stock": 30,
+    "width": 15.0,
+    "height": 30.0,
+    "description": "Una muñeca con diferentes conjuntos de moda.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Muñecas", "Moda", "Infantil"]
+  },
+  {
+    "name": "Set de Bloques",
+    "value": 24.99,
+    "active": true,
+    "stock": 40,
+    "width": 12.0,
+    "height": 12.0,
+    "description": "Un set de bloques de construcción creativos.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Juegos de Construcción", "Infantil"]
+  },
+  {
+    "name": "Rompecabezas Animales",
+    "value": 9.99,
+    "active": true,
+    "stock": 60,
+    "width": 10.0,
+    "height": 8.0,
+    "description": "Rompecabezas con piezas de animales.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Rompecabezas", "Animales", "Infantil"]
+  },
+  {
+    "name": "Carro de Carreras",
+    "value": 16.49,
+    "active": true,
+    "stock": 25,
+    "width": 8.0,
+    "height": 6.0,
+    "description": "Un carro de carreras a control remoto.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Vehículos", "Control Remoto", "Infantil"]
+  },
+  {
+    "name": "Kit de Arte Infantil",
+    "value": 14.99,
+    "active": true,
+    "stock": 35,
+    "width": 14.0,
+    "height": 18.0,
+    "description": "Un conjunto de arte para niños que incluye pinturas y pinceles.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Arte y Manualidades", "Infantil"]
+  },
+  {
+    "name": "Peluche Osito",
+    "value": 12.99,
+    "active": true,
+    "stock": 50,
+    "width": 20.0,
+    "height": 25.0,
+    "description": "Un adorable peluche de osito.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Peluches", "Animales", "Infantil"]
+  },
+  {
+    "name": "Muñeca de Moda",
+    "value": 19.99,
+    "active": true,
+    "stock": 30,
+    "width": 15.0,
+    "height": 30.0,
+    "description": "Una muñeca con diferentes conjuntos de moda.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Muñecas", "Moda", "Infantil"]
+  },
+  {
+    "name": "Set de Bloques",
+    "value": 24.99,
+    "active": true,
+    "stock": 40,
+    "width": 12.0,
+    "height": 12.0,
+    "description": "Un set de bloques de construcción creativos.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Juegos de Construcción", "Infantil"]
+  },
+  {
+    "name": "Rompecabezas Animales",
+    "value": 9.99,
+    "active": true,
+    "stock": 60,
+    "width": 10.0,
+    "height": 8.0,
+    "description": "Rompecabezas con piezas de animales.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Rompecabezas", "Animales", "Infantil"]
+  },
+  {
+    "name": "Carro de Carreras",
+    "value": 16.49,
+    "active": true,
+    "stock": 25,
+    "width": 8.0,
+    "height": 6.0,
+    "description": "Un carro de carreras a control remoto.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Vehículos", "Control Remoto", "Infantil"]
+  },
+  {
+    "name": "Kit de Arte Infantil",
+    "value": 14.99,
+    "active": true,
+    "stock": 35,
+    "width": 14.0,
+    "height": 18.0,
+    "description": "Un conjunto de arte para niños que incluye pinturas y pinceles.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Arte y Manualidades", "Infantil"]
+  },
+ {
+    "name": "Tren de Juguete",
+    "value": 16.99,
+    "active": true,
+    "stock": 30,
+    "width": 30.0,
+    "height": 8.0,
+    "description": "Un tren de juguete con vagones y vías.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Vehículos", "Infantil"]
+  },
+  {
+    "name": "Kit de Manualidades",
+    "value": 11.49,
+    "active": true,
+    "stock": 25,
+    "width": 14.0,
+    "height": 18.0,
+    "description": "Un kit de manualidades para crear proyectos creativos.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Arte y Manualidades", "Infantil"]
+  },
+  {
+    "name": "Juego de Tren de Madera",
+    "value": 23.49,
+    "active": true,
+    "stock": 20,
+    "width": 25.0,
+    "height": 15.0,
+    "description": "Un juego de tren de madera con vías y accesorios.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Vehículos", "Juegos de Construcción", "Infantil"]
+  },
+  {
+    "name": "Pelota de Playa",
+    "value": 6.99,
+    "active": true,
+    "stock": 50,
+    "width": 10.0,
+    "height": 10.0,
+    "description": "Una pelota de playa para juegos en la arena.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Deportes", "Aire Libre", "Infantil"]
+  },
+  {
+    "name": "Juego de Pesca Magnética",
+    "value": 14.49,
+    "active": true,
+    "stock": 30,
+    "width": 15.0,
+    "height": 10.0,
+    "description": "Un juego de pesca magnética para niños pequeños.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Juegos de Mesa", "Infantil"]
+  },
+  {
+    "name": "Kit de Exploración al Aire Libre",
+    "value": 18.99,
+    "active": true,
+    "stock": 25,
+    "width": 12.0,
+    "height": 20.0,
+    "description": "Un kit de exploración para actividades al aire libre.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Aire Libre", "Infantil"]
+  },
+  {
+    "name": "Puzzle 3D",
+    "value": 13.99,
+    "active": true,
+    "stock": 40,
+    "width": 12.0,
+    "height": 12.0,
+    "description": "Un puzzle 3D para armar una estructura tridimensional.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Rompecabezas", "Juegos de Construcción", "Infantil"]
+  },
+  {
+    "name": "Caja de Herramientas de Juguete",
+    "value": 10.49,
+    "active": true,
+    "stock": 35,
+    "width": 10.0,
+    "height": 8.0,
+    "description": "Una caja de herramientas de juguete con accesorios.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Juegos de Imitación", "Infantil"]
+  },
+  {
+    "name": "Rompecabezas Espacial",
+    "value": 10.99,
+    "active": true,
+    "stock": 25,
+    "width": 12.0,
+    "height": 12.0,
+    "description": "Un rompecabezas con imágenes del espacio y planetas.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Rompecabezas", "Espacio", "Infantil"]
+  },
+  {
+    "name": "Tobogán de Juguete",
+    "value": 29.49,
+    "active": true,
+    "stock": 15,
+    "width": 40.0,
+    "height": 20.0,
+    "description": "Un tobogán de juguete para divertirse en casa.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Aire Libre", "Infantil"]
+  },
+  {
+    "name": "Set de Ciencia para Niños",
+    "value": 16.99,
+    "active": true,
+    "stock": 20,
+    "width": 14.0,
+    "height": 12.0,
+    "description": "Un set de ciencia con experimentos educativos para niños.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Educación", "Infantil"]
+  },
+  {
+    "name": "Puzzle de Dinosaurios",
+    "value": 11.49,
+    "active": true,
+    "stock": 30,
+    "width": 10.0,
+    "height": 8.0,
+    "description": "Un puzzle con imágenes de diferentes dinosaurios.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Rompecabezas", "Dinosaurios", "Infantil"]
+  },
+  {
+    "name": "Kit de Exploración al Aire Libre",
+    "value": 18.99,
+    "active": true,
+    "stock": 25,
+    "width": 12.0,
+    "height": 20.0,
+    "description": "Un kit de exploración para actividades al aire libre.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Aire Libre", "Infantil"]
+  },
+  {
+    "name": "Puzzle 3D Espacial",
+    "value": 13.99,
+    "active": true,
+    "stock": 40,
+    "width": 12.0,
+    "height": 12.0,
+    "description": "Un puzzle 3D para armar una estructura tridimensional del espacio.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Rompecabezas", "Espacio", "Infantil"]
+  },
+  {
+    "name": "Juego de Construcción Magnético",
+    "value": 20.99,
+    "active": true,
+    "stock": 20,
+    "width": 10.0,
+    "height": 12.0,
+    "description": "Un juego de construcción magnético para crear formas variadas.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Juegos de Construcción", "Infantil"]
+  },
+  {
+    "name": "Guitarra de Juguete",
+    "value": 9.99,
+    "active": true,
+    "stock": 40,
+    "width": 15.0,
+    "height": 50.0,
+    "description": "Una guitarra de juguete para los futuros músicos.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Música", "Infantil"]
+  },
+  {
+    "name": "Laboratorio Científico",
+    "value": 24.99,
+    "active": true,
+    "stock": 15,
+    "width": 18.0,
+    "height": 15.0,
+    "description": "Un set de laboratorio científico para experimentos educativos.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Educación", "Infantil"]
+  },
+  {
+    "name": "Casa de Juegos con Tobogán",
+    "value": 39.99,
+    "active": true,
+    "stock": 10,
+    "width": 30.0,
+    "height": 40.0,
+    "description": "Una casa de juegos con tobogán para actividades creativas.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Aire Libre", "Infantil"]
+  },
+  {
+    "name": "Set de Médico Infantil",
+    "value": 17.99,
+    "active": true,
+    "stock": 25,
+    "width": 12.0,
+    "height": 10.0,
+    "description": "Un juego de rol de médico con accesorios médicos de juguete.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Juegos de Imitación", "Infantil"]
+  },
+  {
+    "name": "Peluche Unicornio Brillante",
+    "value": 14.49,
+    "active": true,
+    "stock": 30,
+    "width": 18.0,
+    "height": 20.0,
+    "description": "Un suave peluche con forma de unicornio y detalles brillantes.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Peluches", "Animales", "Infantil"]
+  },
+  {
+    "name": "Cohete Espacial",
+    "value": 21.99,
+    "active": true,
+    "stock": 15,
+    "width": 10.0,
+    "height": 30.0,
+    "description": "Un cohete espacial de juguete para aventuras intergalácticas.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Espacio", "Infantil"]
+  },
+  {
+    "name": "Juego de Té Encantado",
+    "value": 12.99,
+    "active": true,
+    "stock": 20,
+    "width": 10.0,
+    "height": 10.0,
+    "description": "Un juego de té de juguete con detalles encantadores.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Juegos de Imitación", "Infantil"]
+  },
+  {
+    "name": "Kit de Astronomía",
+    "value": 19.99,
+    "active": true,
+    "stock": 25,
+    "width": 12.0,
+    "height": 15.0,
+    "description": "Un kit para aprender sobre astronomía y explorar el cielo nocturno.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Educación", "Aire Libre", "Infantil"]
+  },
+  {
+    "name": "Camión de Construcción",
+    "value": 16.99,
+    "active": true,
+    "stock": 30,
+    "width": 15.0,
+    "height": 10.0,
+    "description": "Un camión de construcción de juguete con detalles realistas.",
+    "image": [
+      "https://thumbs.dreamstime.com/b/juguetes-62551972.jpg",
+      "https://thumbs.dreamstime.com/b/juguetes-61554599.jpg"
+    ],
+    "categories": ["Vehículos", "Juegos de Construcción", "Infantil"]
+  }
+]

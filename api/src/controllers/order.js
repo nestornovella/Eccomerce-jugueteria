@@ -15,56 +15,70 @@ const messages = {
 module.exports = {
   getOrder: async (req, res, next) => {
     const { id, userId, extend } = req.query;
+
     try {
       if (id) {
-        const orders = await Order.findByPk(id,{
+        const order = await Order.findByPk(id);
+        if (!order) {
+          rejectHelper(messages.errors.notOrder);
+        }
+        let productList = [];
+        for (const pr of order.products) {
+          const product = await Product.findByPk(pr.id);
+          productList.push({
+            id: pr.id,
+            units: pr.units,
+            total: product.value * pr.units,
+          });
+        }
 
+        order.products = productList;
+        responseHelper(res, order);
+      } else if (userId) {
+        const ordersList = await Order.findAll({
+          where: { userId: userId },
           include: { model: Product },
         });
-        orders
-          ? responseHelper(res, orders)
-          : rejectHelper(messages.errors.notOrder);
+
+        for (const or of ordersList) {
+          let total = 0;
+          for (const prod of or.products) {
+            const product = await Product.findByPk(prod.id);
+            total += product.value * prod.units;
+            prod.total = total;
+            total = 0;
+          }
+        }
+
+        responseHelper(res, ordersList);
+      } else {
+        const orderList = await Order.findAll();
+        if (!orderList.length) responseHelper(res, []);
+        const response = orderList.map((ord) => {
+          return { id: ord.id, userId: ord.userId, products: ord.products };
+        });
+        responseHelper(res, response);
       }
-      else if (userId) {
-        const orders = await Order.findAll({ where: { userId: userId } });
-        orders
-          ? responseHelper(res, orders)
-          : rejectHelper(messages.errors.notOrder);
-      }else{
-      const orderList =
-        extend === "true"
-          ? await Order.findAll({ include: { model: Product } })
-          : await Order.findAll();
-      responseHelper(res, orderList);
-    }
     } catch (error) {
       next(error);
     }
   },
+
   createOrder: async (req, res, next) => {
-    const { products, userId } = req.body; 
+    const { products, userId } = req.body;
     try {
       if (!products || !userId) {
         rejectHelper(messages.errors.paramsRequired);
       }
 
-      const productsId = products.map((pr) => pr[0]);
-      const productsUnits = products.map((pr) => pr[1]);
-      const productsList = await Promise.all(
-        productsId.map((prId) => Product.findByPk(prId))
-      );
-
-      let totalAmount = 0;
-      productsList.forEach((pr, i) => {
-        totalAmount += pr.value * productsUnits[i];
-      });
-      const order = await Order.create({ ...req.body, totalAmount });
-      productsList.forEach(async (prId) => {
-        await order.addProduct(prId.id);
-      });
-
+      const order = await Order.create(req.body);
       const user = await User.findByPk(userId);
       user.addOrder(order.id);
+
+      for(const prod of products){
+        const product = await Product.findByPk(prod.id)
+        await Product.update({stock:product.stock - prod.units},{where:{id: prod.id}})
+      }
 
       responseHelper(res, order);
     } catch (error) {
@@ -94,6 +108,26 @@ module.exports = {
       deletedOrder < 1
         ? rejectHelper(messages.errors.notOrder)
         : responseHelper(res, messages.status.deleteOrder);
+    } catch (error) {
+      next(error);
+    }
+  },
+  cancelOrder: async (req, res, next) => {
+    const { id } = req.query;
+    try {
+      if (!id) rejectHelper(messages.errors.paramsRequired);
+      const order = await Order.findByPk(id)
+
+      for(const prod of order.products){
+        const product = await Product.findByPk(prod.id)
+        await Product.update({stock:product.stock + prod.units},{where:{id: prod.id}})
+      }
+
+      const deletedOrder = await Order.destroy({where:{id: id}})
+      deletedOrder < 1
+      ? rejectHelper(messages.errors.notOrder)
+      : responseHelper(res, messages.status.deleteOrder);
+
     } catch (error) {
       next(error);
     }

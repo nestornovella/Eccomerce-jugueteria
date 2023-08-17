@@ -10,7 +10,7 @@ module.exports = (sequelizeInstance) =>{
         },
         name:{
             type:DataTypes.STRING,
-            alloowNull:false
+            alloowNull:false  
         }
     },{timestamps:false})
 

@@ -12,19 +12,15 @@ module.exports =  (sequelizeInstance)=>{
             primaryKey:true
         },
         products:{
-            type:DataTypes.ARRAY(DataTypes.ARRAY(DataTypes.JSON)),
+            type:DataTypes.ARRAY(DataTypes.JSON),
             defaultValue:[]
         },
-        totalAmount:{
-            type:DataTypes.FLOAT,
-            defaultValue:0
-        },
-        status:{
+        status:{ 
             type:DataTypes.ENUM(status.acepted,
                  status.pending, 
                  status.inProcess, 
                  status.sended, 
-                 status.cancelled),
+                 status.cancelled), 
             defaultValue:status.pending
         }
     })

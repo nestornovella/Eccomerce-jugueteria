@@ -23,9 +23,6 @@ module.exports = (sequelizeInstance) => {
       type: INTEGER,
       defaultValue: 1,
     },
-    weight: {
-      type: DataTypes.FLOAT,
-    },
     width: {
       type: DataTypes.FLOAT,
     },

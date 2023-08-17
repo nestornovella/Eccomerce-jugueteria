@@ -8,9 +8,9 @@ const messages = {
     paramsRequire: "need password and email to login",
     incorrectParams: "wrong password or email",
   },
-  status:{
-    allowedToken:"jwt current"
-  }
+  status: {
+    allowedToken: "allowed token",
+  },
 };
 
 module.exports = {
@@ -24,25 +24,28 @@ module.exports = {
         console.log(verifyPass);
         if (verifyPass) {
           const token = await jwt.sign(
-            { email: user.email, password: user.password },
+            {id:user.id, email: user.email},
             process.env.TOKEN_SECRET_KEY,
             { expiresIn: process.env.EXPIRES_IN }
           );
-          responseHelper(res,token)
+          responseHelper(res, user, ['Authorization', token], 200)
         }
       } else rejectHelper(messages.errors.incorrectParams);
     } catch (error) {
       next(error);
     }
   },
-  verifyToken:async (req, res, next)=>{
-    const {token} = req.body
+  verifyToken: async (req, res, next) => {
+    const { token } = req.body;
     try {
+      const verify = await jwt.verify(token, process.env.TOKEN_SECRET_KEY);
 
-      const verify =await jwt.verify(token, process.env.TOKEN_SECRET_KEY)
-      responseHelper(res, messages.status.allowedToken)
+
+      responseHelper(res, messages.status.allowedToken, ['user', JSON.stringify(verify.id)]);
     } catch (error) {
-      next(error)
+      if (error.name === 'TokenExpiredError')next("expired token")
+      else if (error.name === 'JsonWebTokenError')next("invalid token")
+      else next(error);
     }
-  }
+  },
 };
